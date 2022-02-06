@@ -5,7 +5,8 @@ const brothers = [
     {name: 'Sazzad Joy', batch: 10, dept: 'CE'}
 ]
 
-// The difference between 'map' and 'forEach' is, map function returns something whereas forEach doesn't
-const names = brothers.forEach(br => console.log(br.name))
+const brothers_of_CSE = brothers.filter(br => br.dept == 'CSE');
 
-// console.log(names)
+const names = brothers_of_CSE.map(br => br.name)
+
+console.log(names)

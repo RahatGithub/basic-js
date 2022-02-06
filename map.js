@@ -6,6 +6,6 @@ const brothers = [
 ]
 
 // The difference between 'map' and 'forEach' is, map function returns something whereas forEach doesn't
-const names = brothers.forEach(br => console.log(br.name))
+const names = brothers.map(br => br.name);
 
-// console.log(names)
+console.log(names)
